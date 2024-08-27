@@ -1,7 +1,5 @@
 <?php
- $LIST = $_GET['list']
-include "config.php";
-mysqli_query($con,"INSERT INTO 'tbtodo'('list')VALUES ('')") 
 
+$con = mysqli_connect("localhost","root","","todo") or die("connectionfail");
 
 ?>

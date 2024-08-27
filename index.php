@@ -14,7 +14,7 @@
 
 <div class="container">
 
-    <div class="row justify-content-center fon m-auto shadow bg-white mt-3-py-3 col-md-6"  >
+    <div class="row justify-content-center fon m-auto shadow bg-white mt-3-py-3 col-md-6">
         <h3 text-center text-primary font-monospace>TODO LIST</h3>
         <div class="col-8">
             <input style="text" name="" class="form-control">
@@ -35,7 +35,8 @@
 <?php
 
 include "config.php";
-$rawData= mysqli_query($con "select * tbtodo");
+
+$rawData = mysqli_query($con, "SELECT FROM * tbtodo");
 
 
 
@@ -64,7 +65,7 @@ $rawData= mysqli_query($con "select * tbtodo");
         <td  style=width:10%;><a href="update.php? ID=" class="btn btn-outline-success"></a>update</td>
         </tr>
         <?php
-        }
+        
         ?>
 
     </tbody>
